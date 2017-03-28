@@ -1,0 +1,301 @@
+/*
+Theme Name: N1 Wordpress
+Author: Luuk Mesker
+Description: Wordpress theme for Nijmegen 1 Radio
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+.row{
+    margin-top: 45px;
+}
+
+header{
+    width:100%;
+    height:15vw;
+}
+/*headerimage*/
+.header{
+    height: 13vw;
+    width: 100%;
+}
+.headerimage{
+    background-image: url("img/nijmegen.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*logo*/
+.logo{
+    width: 12vw;
+    height: 12vw;
+    background-image: url("../images/logo/logo.png");
+    background-size: cover;
+    margin-left:5vw;
+    margin-top:-10vw;
+}
+
+/*menu*/
+ul {
+    font-family: sans-serif;
+    font-size: 1.25vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AE2438;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.searchbar{
+    float: right;
+    margin-top: 0.7vw;
+    margin-right: 3vw;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+    background-color: #ac1e30;
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+    box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+    color: #fff;
+}
+.blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+    margin-bottom: 60px;
+}
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+
+/*
+ * Footer
+ */
+footer
+{
+    left: 0;
+    bottom: 3vw;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    background-color: #AE2438;
+}
+
+.leftfooter{
+    height: auto;
+    float: left;
+    width: 15vw;
+    margin-left: 5vw;
+}
+.leftfooterinfo{
+    color: #f1f1f1;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+.rightfooter{
+    height: auto;
+    float: right;
+    width: 15vw;
+    margin-left: 2vw;
+    color: #f1f1f1;
+}
+.rightfooterinfo{
+    color: #f1f1f1;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer p{
+    margin: 6px;
+}
+
+.blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
